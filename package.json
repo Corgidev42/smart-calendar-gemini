@@ -1,0 +1,79 @@
+{
+  "$schema": "https://www.raycast.com/schemas/extension.json",
+  "name": "smart-calendar-gemini",
+  "title": "Smart Calendar Gemini",
+  "description": "Transforme du texte ou des images en événements calendrier via Gemini 2.5 Flash.",
+  "icon": "icon.png",
+  "author": "dev",
+  "platforms": [
+    "macOS"
+  ],
+  "categories": [
+    "Productivity"
+  ],
+  "keywords": [
+    "calendrier",
+    "événement",
+    "gemini",
+    "ia",
+    "billet",
+    "rdv",
+    "image",
+    "texte",
+    "ocr",
+    "agenda"
+  ],
+  "license": "MIT",
+  "permissions": [
+    "Calendar"
+  ],
+  "commands": [
+    {
+      "name": "index",
+      "title": "Create Calendar Event with AI",
+      "subtitle": "Smart Calendar Gemini",
+      "description": "Colle du texte ou une image (billet, capture) : Gemini extrait date, heure, lieu et crée l’événement dans le calendrier choisi.",
+      "mode": "view",
+      "keywords": [
+        "calendrier",
+        "événement",
+        "gemini",
+        "ia",
+        "billet",
+        "rdv",
+        "agenda"
+      ]
+    }
+  ],
+  "preferences": [
+    {
+      "name": "geminiApiKey",
+      "type": "password",
+      "required": true,
+      "title": "Clé API Gemini",
+      "description": "Clé API Google AI (Google AI Studio).",
+      "placeholder": "AIza..."
+    }
+  ],
+  "dependencies": {
+    "@google/generative-ai": "^0.24.1",
+    "@raycast/api": "^1.104.10",
+    "@raycast/utils": "^2.2.3",
+    "react": "^19.0.0"
+  },
+  "devDependencies": {
+    "@raycast/eslint-config": "^2.0.4",
+    "@types/node": "^22.13.14",
+    "@types/react": "^19.0.12",
+    "eslint": "^9.23.0",
+    "prettier": "^3.5.3",
+    "typescript": "^5.8.2"
+  },
+  "scripts": {
+    "build": "ray build -e dist",
+    "dev": "ray develop",
+    "fix-lint": "ray lint --fix",
+    "lint": "ray lint",
+    "publish": "npx @raycast/api@latest publish"
+  }
+}
