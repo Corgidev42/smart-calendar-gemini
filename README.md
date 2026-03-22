@@ -2,6 +2,9 @@
 
 Extension **Raycast** (macOS) qui crée des événements dans l’app **Calendrier** à partir d’un **texte** et/ou d’une **image** (billet, capture, mail…), en s’appuyant sur **Google Gemini** (modèle Flash) pour extraire titre, date, heure, durée, lieu et catégorie.
 
+**Dépôt :** [github.com/Corgidev42/smart-calendar-gemini](https://github.com/Corgidev42/smart-calendar-gemini)  
+*(Pour publier sur le Raycast Store, mets ton **handle Raycast** dans `package.json` → champ `author`.)*
+
 ## Prérequis
 
 - macOS avec **Raycast**
@@ -12,7 +15,7 @@ Extension **Raycast** (macOS) qui crée des événements dans l’app **Calendri
 ## Installation (usage local)
 
 ```bash
-git clone https://github.com/<ton-compte>/smart-calendar-gemini.git
+git clone https://github.com/Corgidev42/smart-calendar-gemini.git
 cd smart-calendar-gemini
 npm install
 npm run build
