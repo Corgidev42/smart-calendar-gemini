@@ -63,6 +63,13 @@ L’IA choisit une catégorie ; l’extension crée l’événement dans le cale
 | `npm run lint` | ESLint + Prettier + validation manifeste |
 | `npm run publish` | Publication vers le Raycast Store (après compte auteur) |
 
+## Icône (PNG transparent)
+
+L’icône du store Raycast doit être un **PNG 512×512 avec canal alpha** (pas de fond blanc), sinon l’affichage dans la barre de recherche peut être incorrect.
+
+- Source haute définition : `assets/icon-hd.png` (export non déformé).
+- Génération : `npm run icon` (recadre en carré, supprime le fond clair, écrit `assets/icon.png`).
+
 ## Stack technique
 
 - TypeScript strict, React, `@raycast/api`, `@raycast/utils` (AppleScript / JXA pour Calendrier)
