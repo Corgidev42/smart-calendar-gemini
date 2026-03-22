@@ -9,7 +9,7 @@ import { fileURLToPath } from "url";
 
 const __dirname = path.dirname(fileURLToPath(import.meta.url));
 const root = path.join(__dirname, "..");
-const HD = path.join(root, "assets", "icon-hd.png");
+const HD = path.join(root, "assets-dev", "icon-hd.png");
 const OUT = path.join(root, "assets", "icon.png");
 
 function colorDist(r1, g1, b1, r2, g2, b2) {
@@ -29,7 +29,7 @@ function saturation(r, g, b) {
 
 async function main() {
   if (!fs.existsSync(HD)) {
-    console.error("Missing assets/icon-hd.png — place the non-squashed source there.");
+    console.error("Missing assets-dev/icon-hd.png — place the non-squashed source there.");
     process.exit(1);
   }
 

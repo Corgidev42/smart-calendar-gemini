@@ -75,7 +75,7 @@ L’IA choisit une catégorie ; l’extension crée l’événement dans le cale
 
 L’icône du store Raycast doit être un **PNG 512×512 avec canal alpha** (pas de fond blanc), sinon l’affichage dans la barre de recherche peut être incorrect.
 
-- Source haute définition : `assets/icon-hd.png` (export non déformé).
+- Source haute définition : `assets-dev/icon-hd.png` (export non déformé, non inclus dans l’extension buildée).
 - Génération : `npm run icon` (recadre en carré, supprime le fond clair, écrit `assets/icon.png`).
 
 ## Stack technique
