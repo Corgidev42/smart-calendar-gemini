@@ -18,10 +18,18 @@ Extension **Raycast** (macOS) qui crée des événements dans l’app **Calendri
 git clone https://github.com/Corgidev42/smart-calendar-gemini.git
 cd smart-calendar-gemini
 npm install
+```
+
+Le script **`prepare`** lance automatiquement **`npm run build`**, qui produit le dossier **`dist/`** (obligatoire : c’est là que Raycast charge `index.js`).  
+Si tu vois *« Could not find command's executable JS file »*, lance manuellement :
+
+```bash
 npm run build
 ```
 
-Dans Raycast : **Réglages → Extensions → Importer une extension** et sélectionne ce dossier (celui qui contient `package.json`).
+Le build correct utilise `ray build -e dist -o dist` (sans `-o dist`, le dossier `dist/` n’est **pas** créé).
+
+Dans Raycast : **Réglages → Extensions → Importer une extension** et sélectionne ce dossier (racine avec `package.json` et `dist/`). Après une mise à jour du dépôt : **`npm install`** ou **`npm run build`**, puis **Reload** sur l’extension (ou redémarrage de Raycast).
 
 Pour le développement avec rechargement automatique :
 
